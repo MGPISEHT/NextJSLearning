@@ -11,7 +11,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body data-new-gr-c-s-check-loaded="14.1246.0" data-gr-ext-installed="">
+        <header style={{ padding: "1rem", backgroundColor: "lightblue" }}>
+          <p>Header</p>
+        </header>
         {children}
+        <footer style={{ padding: "1rem", backgroundColor: "lightgray" }}>
+          <p>Footer</p>
+        </footer>
       </body>
     </html>
   );
