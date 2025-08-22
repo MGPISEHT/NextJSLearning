@@ -1,0 +1,208 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px; /* Equivalent to p-6 */
+  min-height: 100vh;
+  box-sizing: border-box; /* Ensures padding doesn't increase total width/height */
+}
+
+h1 {
+  font-size: 2.25rem; /* Equivalent to text-4xl */
+  font-weight: 700; /* Equivalent to font-bold */
+  color: #1f2937; /* Equivalent to text-gray-800 */
+  margin-bottom: 32px; /* Equivalent to mb-8 */
+  border-radius: 8px; /* Equivalent to rounded-lg */
+  padding: 8px; /* Equivalent to p-2 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-md */
+  background-color: #ffffff; /* Equivalent to bg-white */
+}
+
+.card {
+  width: 100%;
+  max-width: 48rem; /* Equivalent to max-w-2xl for main cards */
+  background-color: #ffffff;
+  padding: 32px; /* Equivalent to p-8 */
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-xl */
+  margin-bottom: 32px; /* Equivalent to mb-8 */
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 24px; /* Equivalent to mb-6 */
+}
+
+.label {
+  display: block;
+  font-size: 1.125rem; /* Equivalent to text-lg */
+  font-weight: 500; /* Equivalent to font-medium */
+  color: #374151; /* Equivalent to text-gray-700 */
+  margin-bottom: 8px; /* Equivalent to mb-2 */
+}
+
+.file-input {
+  display: block;
+  width: 100%;
+  font-size: 0.875rem; /* Equivalent to text-sm */
+  color: #6b7280; /* Equivalent to text-gray-500 */
+  border: 1px solid #d1d5db; /* Equivalent to border border-gray-300 */
+  border-radius: 6px; /* Equivalent to rounded-md */
+  padding: 8px; /* Equivalent to p-2 */
+  cursor: pointer;
+}
+
+.file-input::file-selector-button {
+  margin-right: 16px; /* Equivalent to file:mr-4 */
+  padding: 8px 16px; /* Equivalent to file:py-2 file:px-4 */
+  border-radius: 9999px; /* Equivalent to file:rounded-full */
+  border: 0; /* Equivalent to file:border-0 */
+  font-size: 0.875rem; /* Equivalent to file:text-sm */
+  font-weight: 600; /* Equivalent to file:font-semibold */
+  background-color: #eff6ff; /* Equivalent to file:bg-blue-50 */
+  color: #1d4ed8; /* Equivalent to file:text-blue-700 */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-input::file-selector-button:hover {
+  background-color: #dbeafe; /* Equivalent to hover:file:bg-blue-100 */
+}
+
+.input-group {
+  display: flex;
+  gap: 8px; /* Equivalent to space-x-2 */
+}
+
+.text-input {
+  flex-grow: 1; /* Equivalent to flex-grow */
+  padding: 12px; /* Equivalent to p-3 */
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  color: #374151;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.text-input:focus {
+  border-color: #3b82f6; /* Equivalent to focus:ring-blue-500 */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Equivalent to focus:ring-2 focus:ring-blue-500 */
+}
+
+.button {
+  padding: 12px 24px; /* Equivalent to px-6 py-3 */
+  font-weight: 600; /* Equivalent to font-semibold */
+  border-radius: 6px; /* Equivalent to rounded-md or rounded-full for the crop button */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-md or shadow-lg */
+  transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover {
+  transform: scale(1.05); /* Equivalent to transform hover:scale-105 */
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Focus ring */
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button-green {
+  background-color: #10b981; /* Equivalent to bg-green-600 */
+  color: #ffffff;
+}
+
+.button-green:hover {
+  background-color: #059669; /* Equivalent to hover:bg-green-700 */
+}
+
+.button-blue {
+  background-color: #3b82f6; /* Equivalent to bg-blue-600 */
+  color: #ffffff;
+}
+
+.button-blue:hover {
+  background-color: #2563eb; /* Equivalent to hover:bg-blue-700 */
+}
+
+.error-message {
+  background-color: #fee2e2; /* Equivalent to bg-red-100 */
+  border: 1px solid #ef4444; /* Equivalent to border border-red-400 */
+  color: #b91c1c; /* Equivalent to text-red-700 */
+  padding: 12px 16px; /* Equivalent to px-4 py-3 */
+  border-radius: 6px; /* Equivalent to rounded-md */
+  margin-bottom: 16px; /* Equivalent to mb-4 */
+  position: relative;
+}
+
+.error-message strong {
+  font-weight: 700; /* Equivalent to font-bold */
+}
+
+.error-message span {
+  display: block; /* Equivalent to block sm:inline */
+  margin-left: 8px; /* Equivalent to ml-2 */
+}
+
+h2 {
+  font-size: 1.5rem; /* Equivalent to text-2xl */
+  font-weight: 600; /* Equivalent to font-semibold */
+  color: #1f2937; /* Equivalent to text-gray-800 */
+  margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+.canvas-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+canvas {
+  border: 1px solid #d1d5db; /* Equivalent to border border-gray-300 */
+  border-radius: 6px; /* Equivalent to rounded-md */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06); /* Equivalent to shadow-inner */
+  background-color: #f9fafb; /* Equivalent to bg-gray-50 */
+}
+
+.button-group {
+  margin-top: 24px; /* Equivalent to mt-6 */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Equivalent to flex-wrap */
+  gap: 16px; /* Equivalent to gap-4 */
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Equivalent to space-x-2 */
+  color: #374151; /* Equivalent to text-gray-700 */
+  font-weight: 500; /* Equivalent to font-medium */
+}
+
+.checkbox-input {
+  height: 20px; /* Equivalent to h-5 */
+  width: 20px; /* Equivalent to w-5 */
+  color: #3b82f6; /* Equivalent to text-blue-600 */
+  border-radius: 4px; /* Equivalent to rounded */
+}
+
+.info-text {
+  color: #4b5563; /* Equivalent to text-gray-600 */
+  margin-top: 16px; /* Equivalent to mt-4 */
+  font-size: 0.875rem; /* Equivalent to text-sm */
+  text-align: center;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}
